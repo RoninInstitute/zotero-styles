@@ -3,7 +3,7 @@
   <info>
     <title>Ronin Institute</title>
     <title-short>Ronin Institute</title-short>
-    <id>https://raw.githubusercontent.com/RoninInstitute/zotero-styles/main/ronin-institute.csl/id>
+    <id>https://raw.githubusercontent.com/RoninInstitute/zotero-styles/main/ronin-institute.csl</id>
     <link href="https://raw.githubusercontent.com/RoninInstitute/zotero-styles/main/ronin-institute.csl" rel="self"/>
     <author>
       <name>Alex Lancaster</name>
@@ -192,7 +192,7 @@
             <text variable="repository" suffix="."/>
             <text variable="archive_id"/>
           </group>
-        </if>
+        </else-if>
         <else-if type="chapter paper-conference" match="any">
           <text macro="title" prefix=" " suffix="."/>
           <group prefix=" " delimiter=" ">
