@@ -10,7 +10,8 @@
       <email>alex.lancaster@ronininstitute.org</email>
     </author>
     <category citation-format="author-date"/>
-    <category field="interdisciplinary"/>
+    <category field="science"/>
+    <category field="humanities"/>
     <summary>Ronin Institute website, based on American Political Science Association style.</summary>
     <updated>2022-09-06T17:06:02+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
@@ -97,13 +98,20 @@
   </macro>
   <macro name="publisher">
     <choose>
-      <if type="thesis" match="none">
+      <if type="thesis">
         <group delimiter=": ">
           <text variable="publisher-place"/>
           <text variable="publisher"/>
         </group>
         <text variable="genre" prefix=". "/>
       </if>
+     <else-if type="article">
+        <group delimiter=" "> 
+          <text variable="publisher"/>
+          <text variable="number"/>
+          <text variable="genre"/>
+        </group>
+     </else-if>
       <else>
         <group delimiter=". ">
           <text variable="genre"/>
@@ -177,7 +185,7 @@
         <date-part name="year"/>
       </date>
       <choose>
-        <if type="bill book graphic legal_case legislation manuscript motion_picture report song thesis" match="any">
+        <if type="article bill book graphic legal_case legislation manuscript motion_picture report song thesis" match="any">
           <text macro="legal_case"/>
           <group prefix=" " delimiter=" ">
             <text macro="title" suffix="."/>
@@ -186,13 +194,6 @@
           </group>
           <text prefix=" " suffix="." macro="publisher"/>
         </if>
-        <else-if type="preprint">
-          <group prefix=" " delimiter=" ">
-            <text term="in"/>
-            <text variable="repository" suffix="."/>
-            <text variable="archive_id"/>
-          </group>
-        </else-if>
         <else-if type="chapter paper-conference" match="any">
           <text macro="title" prefix=" " suffix="."/>
           <group prefix=" " delimiter=" ">
