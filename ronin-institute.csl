@@ -188,8 +188,8 @@
         </if>
         <if type="preprint" match="any">
           <group prefix=" " delimiter=" ">
-            <text macro="repository" suffix="."/>
-            <text macro="archive_id"/>
+            <text variable="repository" suffix="."/>
+            <text variable="archive_id"/>
           </group>
         </if>
         <else-if type="chapter paper-conference" match="any">
