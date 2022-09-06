@@ -3,8 +3,8 @@
   <info>
     <title>Ronin Institute</title>
     <title-short>Ronin Institute</title-short>
-    <id>http://www.zotero.org/styles/ronin-institute</id>
-    <link href="http://www.zotero.org/styles/ronin-institute" rel="self"/>
+    <id>https://raw.githubusercontent.com/RoninInstitute/zotero-styles/main/ronin-institute.csl/id>
+    <link href="https://raw.githubusercontent.com/RoninInstitute/zotero-styles/main/ronin-institute.csl" rel="self"/>
     <author>
       <name>Alex Lancaster</name>
       <email>alex.lancaster@ronininstitute.org</email>
