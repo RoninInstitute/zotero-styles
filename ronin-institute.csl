@@ -186,7 +186,7 @@
           </group>
           <text prefix=" " suffix="." macro="publisher"/>
         </if>
-        <else-if type="preprint" match="any">
+        <else-if type="preprint">
           <group prefix=" " delimiter=" ">
             <text term="in"/>
             <text variable="repository" suffix="."/>
