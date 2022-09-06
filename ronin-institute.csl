@@ -188,6 +188,7 @@
         </if>
         <else-if type="preprint" match="any">
           <group prefix=" " delimiter=" ">
+            <text term="in"/>
             <text variable="repository" suffix="."/>
             <text variable="archive_id"/>
           </group>
