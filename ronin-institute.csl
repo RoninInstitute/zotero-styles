@@ -2,7 +2,7 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" page-range-format="chicago" demote-non-dropping-particle="sort-only">
   <info>
     <title>Ronin Institute</title>
-    <title-short>Ronin</title-short>
+    <title-short>Ronin Institute</title-short>
     <id>http://www.zotero.org/styles/ronin-institute</id>
     <link href="http://www.zotero.org/styles/ronin-institute" rel="self"/>
     <author>
@@ -80,7 +80,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="bill book graphic legal_case legislation motion_picture preprint report song" match="any">
+      <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
         <text variable="title" font-style="italic" text-case="title"/>
       </if>
       <else>
@@ -177,7 +177,7 @@
         <date-part name="year"/>
       </date>
       <choose>
-        <if type="bill book graphic legal_case legislation manuscript motion_picture preprint report song thesis" match="any">
+        <if type="bill book graphic legal_case legislation manuscript motion_picture report song thesis" match="any">
           <text macro="legal_case"/>
           <group prefix=" " delimiter=" ">
             <text macro="title" suffix="."/>
@@ -185,6 +185,12 @@
             <text macro="editor" suffix="."/>
           </group>
           <text prefix=" " suffix="." macro="publisher"/>
+        </if>
+        <if type="preprint" match="any">
+          <group prefix=" " delimiter=" ">
+            <text macro="repository" suffix="."/>
+            <text macro="archive_id"/>
+          </group>
         </if>
         <else-if type="chapter paper-conference" match="any">
           <text macro="title" prefix=" " suffix="."/>
