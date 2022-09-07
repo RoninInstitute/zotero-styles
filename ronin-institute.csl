@@ -3,8 +3,8 @@
   <info>
     <title>Ronin Institute</title>
     <title-short>Ronin Institute</title-short>
-    <id>https://raw.githubusercontent.com/RoninInstitute/zotero-styles/main/ronin-institute.csl</id>
-    <link href="https://raw.githubusercontent.com/RoninInstitute/zotero-styles/main/ronin-institute.csl" rel="self"/>
+    <id>https://ronininstitute.org/ronin-institute.csl</id>
+    <link href="https://ronininstitute.org/ronin-institute.csl" rel="self"/>
     <author>
       <name>Alex Lancaster</name>
     </author>
@@ -12,7 +12,7 @@
     <category field="science"/>
     <category field="humanities"/>
     <summary>Ronin Institute website, based on American Political Science Association style.</summary>
-    <updated>2022-09-06T17:06:02+00:00</updated>
+    <updated>2022-09-07T17:06:02+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en-US">
