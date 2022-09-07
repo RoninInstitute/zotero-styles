@@ -104,14 +104,13 @@
         </group>
         <text variable="genre" prefix=". "/>
       </if>
-     <else-if type="article">
-        <group delimiter=" "> 
+      <else-if type="article">
+	<group delimiter=" ">
           <text variable="publisher"/>
 	  <text variable="genre"/>
-          <text variable="number"/>
-	  <text variable="source" prefix="(" suffix=")"/>
+	  <text variable="number"/>
         </group>
-     </else-if>
+      </else-if>
       <else>
         <group delimiter=". ">
           <text variable="genre"/>
